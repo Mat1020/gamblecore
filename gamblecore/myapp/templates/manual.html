@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Favicon-->
+    <link rel="icon" href="/static/Images/favicon-32x32.png" type="image/png">
+    <title>Gamblecore | A competitive, pixelated gambling game</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .press-start {
+            font-family: 'Press Start 2P', sans-serif;
+            color: #333;
+            font-style: normal; /* emergency use only */
+        }
+
+        .silkscreen {
+            font-family: 'Silkscreen', sans-serif;
+            color: #666;
+            font-style: normal; /* emergency use only */
+        }
+
+        /* Navbar */
+        .navbar * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f4f4f4;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        }
+
+        .navbar-title {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Silkscreen', sans-serif;
+        color: #333;
+        }
+
+        .navbar-links {
+        display: flex;
+        gap: 15px;
+        }
+
+        .navbar-links a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 18px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        }
+
+        .navbar-links a:hover {
+        background-color: #e6e6e6;
+        }
+
+        /* Table of Contents */        
+        html {
+            scroll-behavior: smooth; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        section {
+            padding-top: 50px;
+        }
+
+        #how_to_play_in_gamblecore {
+        background-color: #ffcccb;
+        height: 150vh;
+        }
+        
+        #gambling_arcades_informational_notes {
+        background-color: #add8e6;
+        height: 210vh;
+        }
+
+        #gamblecore_features_explained {
+        background-color: #90ee90;
+        height: 230vh;
+        }
+
+        #common_problems {
+        background-color: #f5d142;
+        height: 100vh;
+        }
+
+        #where_should_you_start {
+        background-color: #dd88ff;
+        height: 155vh;
+        }
+
+        #credits {
+        height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!--Website Navigation starts here-->
+    <div class="navbar">
+        <div class="navbar-title">🎲 <font color="#cc0000">G</font><font color="#38761d">a</font><font color="#cc0000">m</font><font color="#93c47d">b</font><font color="#cc0000">l</font><font color="#93c47d">e</font><font color="#cc0000">c</font><font color="#38761d">o</font><font color="#cc0000">r</font><font color="#38761d">e</font> </div>
+        <div class="navbar-links">
+            <nav>
+                <br><a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/manual/"><font color="#ff0000"><u>Manual</u></font></a>
+                <a href="/contact_us/">Contact Us</a>
+            </nav>
+        </div>
+      </div>
+    <!--Website Navigation ends here-->
+    
+    <h1 class="silkscreen" style="font-size:50px;"><center>💸 <font color="#cc0000"><u>G</u></font><font color="#38761d"><u>a</u></font><font color="#cc0000"><u>m</u></font><font color="#93c47d"><u>b</u></font><font color="#cc0000"><u>l</u></font><font color="#93c47d"><u>e</u></font><font color="#cc0000"><u>c</u></font><font color="#38761d"><u>o</u></font><font color="#cc0000"><u>r</u></font><font color="#38761d"><u>e</u></font> <font color="#0000ff"><u>M</u></font><font color="#1e90ff"><u>a</u></font><font color="#0000ff"><u>n</u></font><font color="#1e90ff"><u>u</u></font><font color="#0000ff"><u>a</u></font><font color="#1e90ff"><u>l</u></font> 💰</center></h1>
+    <p><center>The Gamblecore Manual provides instructions for playing, how Gamblecore works, and much more.</center></p>
+    <br>
+    
+    <!--Table of contents-->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th class="press-start" style="font-size:30px;"><center>🗃️ <font color="#000000"><u>Table of Contents:</u></font> 🗃️</center></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#how_to_play_in_gamblecore"><center>How to Play in Gamblecore</center></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#gambling_arcades_informational_notes"><center>Gambling Arcades Informational Notes</center></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#gamblecore_features_explained"><center>Gamblecore Features Explained</center></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#common_problems"><center>Common Problems</center></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#where_should_you_start"><center>Where Should YOU Start?</center></a></td>
+                </tr>
+                <tr>
+                    <td><a href="#credits"><center>Credits</center></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+
+    <section id="how_to_play_in_gamblecore">
+        <h2 class="silkscreen"><i>🎰 <font color="#000000"><u>How to Play in Gamblecore</u></font></i></h2> <br>
+
+        <!--Steps-->
+        <p><center><strong>Step 1: </strong>Visit <i>Home</i> (found on the top), then click the box that says "dice now".</center></p>
+        <br>
+
+        <p><center><strong>Step 2: </strong>Type a Gambling Category number to select.</center></p>
+            <p><center><u>For example</u>,</center></p>
+            <p><center>I chose #1 for Slot Machines:</center></p>
+            <p><center><font color="#0000ff">[insert image, needs playing system first]</font></center></p>
+        <br>
+
+        <p><center><strong>Step 3: </strong>Type a Gambling Arcade number to play.</center></p>
+            <p><center><u>For example</u>,</center></p>
+            <p><center>I chose #1 for Classic Slot Machine:</center></p>
+            <p><center><font color="#0000ff">[insert image, needs playing system first]</font></center></p>
+        <br>
+
+        <!--Note-->
+        <p><center><strong><u>Note!</u> </strong>You don't have to enter the same as the example, you can try any you want (10 different games in total)!</center></p>
+        <br>
+
+        <p><center><strong>Step 4: </strong>After you are done gambling, quit the Gambling Arcade you were playing on.</center></p>
+            <p><center><u>For example</u>,</center></p>
+            <p><center>Type “q” to quit (when it askes you if you want to play again):</center></p>
+            <p><center><font color="#0000ff">[insert image, needs playing system first]</font></center></p>
+        <br>
+
+        <p><center><strong>Step 5: </strong>Let it save your Stats and Acount, (it may take a while so please don't close it) to record you in the Leaderboards for the Gambling Category you've chosen.</center></p>
+            <p><center></center>Although, <u>you need to have an acount</u>, otherwise <u>it won't save your Stats without an Acount</u>. You can find where to Create an Acount or Sign In at <font color="#0000ff">[explain where is sign in/log in]</font>.</p>
+        <br>
+
+        <!--Video Tutorial-->
+        <p><center>If you need more assitance, please watch the video below: </center></p>
+        <p><center><font color="#0000ff">[insert video, needs playing system first]</font></center></p>
+    </section>
+
+
+    <section id="gambling_arcades_informational_notes">
+        <h2 class="silkscreen"><i>📒 <font color="#000000"><u>Gambling Arcades Informational Notes</u></font></i></h2> <br>
+
+        <!--Slot Machines-->
+        <h2 class="press-start" style="font-size:30px;"><center>🎰 <font color="#ff0000"><u>S</u></font><font color="#ff2a00"><u>l</u></font><font color="#ff5500"><u>o</u></font><font color="#ff7f00"><u>t</u></font><font color="#ffbf00"><u> </u></font><font color="#ffff00"><u>M</u></font><font color="#aaff00"><u>a</u></font><font color="#55ff00"><u>c</u></font><font color="#16f78a"><u>h</u></font><font color="#00ff80"><u>i</u></font><font color="#00FFFF"><u>n</u></font><font color="#00aaff"><u>e</u></font><font color="#0055ff"><u>s</u></font><font color="#0000ff"><u>:</u></font> 🎰</center></h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name:</th>
+                        <th>Difficulty to Learn:</th>
+                        <th>Difficulty to Win:</th>
+                        <th>Wins:</th>
+                        <th>Description:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Classic Slot Machine</td>
+                        <td>Easy</td>
+                        <td>Easy</td>
+                        <td>1</td>
+                        <td>With 3 columns, and 8 different symbols, Classic Slot Machine is considered the most practical of both Slot Machines and Gambling Arcades.</td>
+                    </tr>
+                    <tr>
+                        <td>Bucks Slot Machine</td>
+                        <td>Hard</td>
+                        <td>Medium</td>
+                        <td>3</td>
+                        <td>Different from the other 2, Bucks Slot Machine is known for having 3 rows and 3 columns, which you can bet on different rows (lines) up to a amount of $100.</td>
+                    </tr>
+                    <tr>
+                        <td>Tryhard Slot Machine</td>
+                        <td>Easy</td>
+                        <td>Hard</td>
+                        <td>7</td>
+                        <td>Exactly like <i>Classic Slot Machine</i>, but Tryhard Slot Machine adds 2 more columns (5 columns total) for decreasing winning chances, however it has 6 symbols instead of 8 symbols.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+
+        <!--Roulette Wheels-->
+        <h2 class="press-start" style="font-size:30px;"><center>🎡 <font color="#ff0000"><u>R</u></font><font color="#000000"><u>o</u></font><font color="#ff0000"><u>u</u></font><font color="#000000"><u>l</u></font><font color="#ff0000"><u>e</u></font><font color="#000000"><u>t</u></font><font color="#ff0000"><u>t</u></font><font color="#000000"><u>e</u></font><font color="#ff0000"><u> </u></font><font color="#000000"><u>W</u></font><font color="#ff0000"><u>h</u></font><font color="#000000"><u>e</u></font><font color="#ff0000"><u>e</u></font><font color="#000000"><u>l</u></font><font color="#ff0000"><u>s</u></font><font color="#000000"><u>:</u></font> 🎡</center></h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name:</th>
+                        <th>Difficulty to Learn:</th>
+                        <th>Difficulty to Win:</th>
+                        <th>Wins:</th>
+                        <th>Description:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>French Roulette Wheel</td>
+                        <td>Easy/Medium</td>
+                        <td>Easy</td>
+                        <td>3</td>
+                        <td>With a random chance of hitting 0 for its uniqueness, French Roulette Wheel stands out as giving better odds to the player but is the most complex to strategice. The winning chances are: 1.35% (with La Partage/En Prison) or 2.70% (most of the time).</td>
+                    </tr>
+                    <tr>
+                        <td>American Roulette Wheel</td>
+                        <td>Easy</td>
+                        <td>Medium</td>
+                        <td>7</td>
+                        <td>Exactly like <i>European Roulette Wheel</i>, but American Roulette Wheel decreases winning chances by adding the opportunity to guess double zero (00). The winning chances are: 2.63%.</td>
+                    </tr>
+                    <tr>
+                        <td>European Roulette Wheel</td>
+                        <td>Easy</td>
+                        <td>Easy</td>
+                        <td>1</td>
+                        <td>May be the father of Roulette Wheels, European Roulette Wheel is the simplest to learn about Roulette Wheels and the easiest to win. The winning chances are: 2.70%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+
+        <!--Poker Variants-->
+        <h2 class="press-start" style="font-size:30px;"><center>🃏 <font color="#000000"><u>P</u></font><font color="#ff0000"><u>o</u></font><font color="#0000ff"><u>k</u></font><font color="#38761d"><u>e</u></font><font color="#000000"><u>r</u></font><font color="#ff0000"><u> </u></font><font color="#0000ff"><u>V</u></font><font color="#38761d"><u>a</u></font><font color="#000000"><u>r</u></font><font color="#ff0000"><u>i</u></font><font color="#0000ff"><u>a</u></font><font color="#38761d"><u>n</u></font><font color="#000000"><u>t</u></font><font color="#ff0000"><u>s</u></font><font color="#0000ff"><u>:</u></font> 🃏</center></h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name:</th>
+                        <th>Difficulty to Learn:</th>
+                        <th>Difficulty to Win:</th>
+                        <th>Wins:</th>
+                        <th>Description:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Texas Hold Em'</td>
+                        <td>Easy/Medium</td>
+                        <td>Easy</td>
+                        <td>2</td>
+                        <td>With 2-cards, an interesting betting & calling system, and forced bets (Blinds), Texas Hold Em' is considered the Top #1 in popularity, being the most famous Poker Variant.</td>
+                    </tr>
+                    <tr>
+                        <td>Omaha Hi</td>
+                        <td>Easy</td>
+                        <td>Easy</td>
+                        <td>1</td>
+                        <td>A twin of <i>Texas Hold Em'</i>, Omaha Hi doesn't have Blinds for easier understanding of Poker and has 4-cards. Omaha Hi is considered Top #2 in popularity.</td>
+                    </tr>
+                    <tr>
+                        <td>Seven-Card Stud</td>
+                        <td>Easy</td>
+                        <td>Hard</td>
+                        <td>7</td>
+                        <td>Known for having 7-cards, Seven-Card Stud has 5 small-rounds in 1 round, bets count up, and Antes' amount are random (Antes are the same as Blinds). Seven-Card Stud is considered Top #3 in popularity.</td>
+                    </tr>
+                    <tr>
+                        <td>Five-Card Draw *Cantredraw</td>
+                        <td>Medium</td>
+                        <td>Medium</td>
+                        <td>3</td>
+                        <td>More commonly known as Cantredraw, Cantredraw has 5-cards and has everything mentioned earlier. It has a Drawing system in which goes like this: you can draw some of your cards and receive new cards from the deck to improve your hand. Cantredraw is considered Top #4 in popularity.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <section id="gamblecore_features_explained">
+        <h2 class="silkscreen"><i>👀 <font color="#000000"><u>Gamblecore Features Explained</u></font></i></h2> <br>
+        <p style="text-align: left;">Do you want to know cool features about Gamblecore? Or maybe you don't know some features and you need to know them? Well, that is what this section is going to be mostly</p>
+            <p style="text-align: left;">about. The main idea of this section of the Manual is to explain every important or interesting feature Gamblecore has. Below, you can see how these features are identified:</p>
+        <!--Table of how it works-->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Interesting Features</th>
+                        <th>Important Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Single asterisk (*)</td>
+                        <td>Doble asterisk (**)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+
+        <!--Gambling Categories-->
+        <p style="text-align: left;"><strong>Gambling Categories **</strong></p>
+            <p style="text-align: left;">Gambling Categories is the name we have for our general playing sections. In total, we have 3 Gambling Categories; Slot Machines, Roulette Wheels, and Poker Variants. The</p>
+            <p style="text-align: left;">Gambling Categories are a base line for our Leaderboards' organization.</p>
+        <br>
+
+        <!--Gambling Arcades-->
+        <p style="text-align: left;"><strong>Gambling Arcades **</strong></p>
+            <p style="text-align: left;">Gambling Arcades is the name we have for our games for each Gambling Category, we recomend you read <i>Gambling Categories **</i> first. We have a total of 10 Gambling Arcades;</p>
+            <p style="text-align: left;">Classic Slot Machine, Bucks Slot Machine, Tryhard Slot Machine (3 for Slot Machines), French Roulette Wheel, American Roulette Wheel, European Roulette Whell (3 for Roulette</p>
+            <p style="text-align: left;">Wheels), Texas Hold Em', Omaha Hi, Seven-Card Stud, and Cantredraw (4 for Poker Variants).</p>
+        <br>
+
+        <!--Stats-->
+        <p style="text-align: left;"><strong>Stats **</strong></p>
+            <p style="text-align: left;">The Stats is what you see after you quit playing, tells you and shows you what you did, later send that information to Gamblecore to record you in the Leaderboards. The Stats are</p>
+            <p style="text-align: left;">surrounded by asterisks and includes the initials of the Gambling Arcade you played (example if you chose Classic Slot Machine: * CSM Stats* ). After that, the Stats says how much</p>
+            <p style="text-align: left;">money you left with, how many wins, how many loses, how many ties or misses, and the total rounds. After it tells and shows you an overall summary about your run, the Stats tells</p>
+            <p style="text-align: left;">you a warmly good-bye.</p>
+        <br>
+
+        <!--Warning-->
+        <p style="text-align: left;"><strong>Warning *</strong></p>
+            <p style="text-align: left;">The Warning's general purpose is to make sure that people understand that there's no betting real money and there are no prizes for legal reasons, the message overall is very</p>
+            <p style="text-align: left;">straightfoward. If you have any problems reading it, here's the Warning's message: <i>*Warning: This isn't Gambling as there is no betting real money; The following contents may be</p>
+            <p style="text-align: left;">addictive, play responsibly & we are not liable for any damages. Please don't gamble in real life or bet real money, it causes a lot of harm. There are no prizes for legal reasons, and</p>
+            <p style="text-align: left;">the experience is intended solely for entertainment & competitive purposes*</i> Additionally, the Warning's design represents a yellow note on the side or front of an slot machine or</p>
+            <p style="text-align: left;">arcades that include real gambling.</p>
+        <br>
+
+        <!--Leaderboards-->
+        <p style="text-align: left;"><strong>Leaderboards **</strong></p>
+            <p style="text-align: left;">The way that the Leaderboards work in Gamblecore is quite complex, so we'll try our best to explain it to you; there are two types of Leaderboards: Complete Leaderboards (shows</p>
+            <p style="text-align: left;">every player who was recorded) and Top-5 Leaderboards (shows players who are in top 5, self explanatory). The Top-5 leaderboards use Complete Leaderboards as its guide. On the</p>
+            <p style="text-align: left;">other hand, Complete Leaderboards do the requirements for a player to be recorded and gets the information from the Stats. Now that's out of the way, let's talk how to "read" Top-5</p>
+            <p style="text-align: left;"> Leaderboards. The first thing we have, is the place number, and the player name, seperated by a space and a column. After the place number and player name, we have the amount</p>
+            <p style="text-align: left;">of wins, seperated by parenthesis. The max wins for a player in each Gambling Category each day is 7 wins.</p>
+        <br>
+        
+        <!--Weekend Leaderboards-->
+        <p style="text-align: left;"><strong>Weekend Leaderboards *</strong></p>
+            <p style="text-align: left;">The Weekend Leaderboards don't work too diferent from the regular Leaderboards, in fact, there are small changes. The main idea of the Weekend Leaderboards is to combine all the</p>
+            <p style="text-align: left;">Gambling Categories' wins together (Slot Machines wins + Roulette Wheels wins + Poker Variants wins = your total wins). The other main idea is that the max wins is 27 instead of 7</p>
+            <p style="text-align: left;">wins. Additionally, instead of having Top-5 Leaderboards, Weekend has Top-10 Leaderboards. The changes are the same for the Complete Leaderboards for the weekend.</p>
+        <br>
+    </section>
+
+
+    <section id="common_problems">
+        <h2 class="silkscreen"><i>❓ <font color="#000000"><u>Common Problems</u></font></i></h2> <br>
+
+        <!--Problem #1-->
+        <p><center><strong>Q: </strong>Why does the total rounds don't make sense? Why does it not match my wins, losses, misses/ties (overall Stats)?</center></p>
+        <br>
+
+        <p><center><strong>A: </strong>The total number of rounds may look confusing to you for <u>two main reasons</u>. The first reason is the <u>win multiplier</u>;</center></p>
+            <p><center>you can win once, but it counts as more. The second reason is that <u>you didn't input a valid action</u>, which in some</center></p>
+            <p><center>(not all) Gambling Arcades can lead to just starting a new round.</center></p>
+        <br>
+
+        <h1 class="press-start"><center><font color="#741b47"> <—————————————————————————————————————> </font></center></h1>
+
+        <!--Problem #2-->
+        <p><center><strong>Q: </strong></center></p>
+        <br>
+
+        <p><center><strong>A: </strong></center></p>
+        <br>
+
+        <!--Reaching Out-->
+        <br> <br>
+        <p><center><strong>Didn't find your current problem? Don't hesitate to reach us out!</strong></center></p>
+        <p><center>You can reach us out by visiting <i>Contact Us</i> (found on the top).</center></p>
+    </section>
+
+
+    <section id="where_should_you_start">
+        <h2 class="silkscreen"><i>🗺️ <font color="#000000"><u>Where Should YOU Start?</u></font></i></h2>
+        <p><center>Image gotten from: <a href="https://www.smartdraw.com/" target="_blank" rel="noopener noreferrer">SmartDraw</a></center></p>
+        <img src="/static/Images/Roadmap.png">
+
+        <p style="text-align: left;"><strong>Overall:</strong></p>
+
+        <p style="text-align: left;">If you don't know where to start, we suggest that everyone new to Gamblecore try the Classic Slot Machine, as it's one of the simplest Gambling Arcades. Another option similar to the</p>
+            <p style="text-align: left;">Classic Slot Machine is the Tryhard Slot Machine, which is more challenging in terms of winning time. Before exploring other Gambling Categories, you should try the Bucks Slot</p>
+            <p style="text-align: left;">Machine at least once, as it's a fun way to learn how to bet.</p>
+        <br>
+
+        <p style="text-align: left;">Next, you might consider trying the European Roulette Wheel or Omaha Hi, as both are among the simplest and easiest options in their respective Gambling Categories. If you enjoy</p>
+            <p style="text-align: left;">the European Roulette Wheel, you can then explore the American Roulette Wheel or the French Roulette Wheel.  If you prefer Omaha Hi, you can move on to Texas Hold Em', and</p>
+            <p style="text-align: left;">later try Cantredraw or Seven-Card Stud.</p>
+        <br>
+
+        <p style="text-align: left;">Remember, there are 10 different and unique Gambling Arcades. It really depends on your personal style, but the important part is to try each one and enjoy playing them! <strong>:D</strong></p>
+    </section>
+
+    <section id="credits">
+        <h2 class="silkscreen"><i>🪪 <font color="#000000"><u>Credits</u></font></i></h2> <br>
+
+
+        <h1 class="press-start"><font color="#0000ff">Published By:</font></h1>
+        <h1 class="press-start"><font color="#ff0000">GitHub Pages</font></h1> <br>
+
+        <h1 class="press-start"><font color="#0000ff">Gamblecore Created By:</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Matías Taján</font></h1> <br>
+
+        <h1 class="press-start"><font color="#0000ff">Gamblecore Officially Launched On:</font></h1>
+        <h1 class="press-start"><font color="#ff0000">January 9th, 2025</font></h1> <br>
+
+
+        <h1 class="press-start"><font color="#0000ff">Developed By:</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Matías Taján</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Justin Cheung</font></h1> <br>
+
+        <h1 class="press-start"><font color="#0000ff">Directed and Co-Written By:</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Matías Taján</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Justin Cheung</font></h1> <br>
+
+        <h1 class="press-start"><font color="#0000ff">Design, Art Director</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Jacob Rose</font></h1> <br>
+
+        <h1 class="press-start"><font color="#0000ff">Programming</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Matías Taján</font></h1> <br>
+    
+        <h1 class="press-start"><font color="#0000ff">Additional Programming</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Justin Cheung</font></h1> <br>
+
+        <h1 class="press-start"><font color="#0000ff">Ideas & Brainstorming</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Matías Taján</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Justin Cheung</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Jacob Rose</font></h1> <br>
+
+        <h1 class="press-start"><font color="#0000ff">Reviewers</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Ana Cummings</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Peter Cummings</font></h1> <br>
+
+        <h1 class="press-start"><font color="#9333ea">Websites Took for Inspiration:</font></h1>
+        <h1 class="press-start"><a href="https://monkeytype.com" target="_blank" rel="noopener noreferrer">MonkeyType</a></h1>
+        <h1 class="press-start"><a href="https://nitrotype.com/garage" target="_blank" rel="noopener noreferrer">NitroType</a></h1>
+        <h1 class="press-start"><a href="https://nitro.fandom.com/wiki/Nitro_Wiki:Home" target="_blank" rel="noopener noreferrer">NitroType - Wiki Fandom</a></h1>
+        <h1 class="press-start"><a href="https://nationaltoday.com" target="_blank" rel="noopener noreferrer">National Today</a></h1><br>
+
+        <h1 class="press-start"><font color="#F1C232">⭐ SPECIAL THANKS ⭐</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Alvincris Apaah</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Oscar Eduardo Taján</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Copito (our pet)</font></h1>
+
+        
+        <!--Bottom Links-->
+        <br> <br>
+        <!--GitHub--> <a href="https://github.com/Mat1020/gamblecore/" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#b316f7"><u>🐈‍⬛github</u></font></a>
+        <!--Email--> <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=contact.gamblecore.net@gmail.com" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#ff0000"><u>✉️email</u></font></a>
+        <!--Privacy Policy--> <a href="policy/privacy_policy" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#38761d"><u>🔒privacy</u></font></a>
+        <!--Terms of Service--> <a href="policy/terms_of_service" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#000bd7"><u>📜terms</u></font></a>
+    <br> <br>
+    </section>
+</body>
+</html>
