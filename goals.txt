@@ -80,5 +80,8 @@ The difference between the Week and Weekend are:
 
 < ------------------------------------------------------------- >
 
-- Server error
-- Render
+- Credits
+- goals.txt
+- Boxes (Part 1)
+- Version (Part 2)
+- Backup
