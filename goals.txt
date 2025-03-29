@@ -1,4 +1,10 @@
 Goals:
+(x) Get Python code for playing done (Google Doc)
+    (x) Have all gambling arcades working and clean main file.
+    (x) Have a way to acces them very easily.
+    (x) Have a Gamblecore Manual.
+    (x) Have a Google Form to join the leaderboards.
+
 (x) Can share to other people by using the url "gamblecore-net"
     (x) GitHub 
     (x) TinyURL
@@ -30,6 +36,10 @@ Goals:
     () Have a pro playing system (pro visuals, pro gameplay)
     () Have a pro recording system (pro leaderboards all-time and weekly, pro and cool visual)
     () Finalize English
+
+() Make extra changes for the Website
+    () Make a system where there's inactivty for 1 minute, it would skip that round and
+    go to Stats to save.
 
 (x) Milestones with HTML & CSS
     (x) Learn how to use Live Server for website develoment
