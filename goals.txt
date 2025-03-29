@@ -37,9 +37,8 @@ Goals:
     () Have a pro recording system (pro leaderboards all-time and weekly, pro and cool visual)
     () Finalize English
 
-() Make extra changes for the Website
-    () Make a system where there's inactivty for 1 minute, it would skip that round and
-    go to Stats to save.
+() Make extra changes for the Playing
+    () Make a system where there's inactivty for 1 minute, it would skip that round and go to Stats to save.
 
 (x) Milestones with HTML & CSS
     (x) Learn how to use Live Server for website develoment
@@ -56,11 +55,37 @@ Goals:
 
 < ------------------------------------------------------------- >
 
-Extra Examples:
+Slot Machines:
+- Classic Slot Machine (3 to win) 
+- Bucks Slot Machine
+- Tryhard Slot Machine (5 to win)
 
-1. Okay, so something else you should know or should help me is that there is
-a folder that is called "Website Idea" that is basically a example of Website 
-Navigation that I got help from ChatGPT.
+Roulette Wheels:
+- French Roulette Wheel "La Partage" and "En Prison"
+- American Roulette Wheel
+- European Roulette Wheel
+
+Poker Variants:
+- Texas Hold Em'
+- Omaha Hi
+- Seven-Card Stud
+- Five-Card Draw (Cantredraw)
+
+< ------------------------------------------------------- >
+
+Every single one should have the following:
+
+1. Quick introduction (Welcome to...)
+2. Easy gameplay (add spaces between plays, clear to read, etc.)
+3. Renember to include the win multiplier
+4. Clear stats (*money, wins, losts, *misses/ties, rounds)
+
+5. Everything into functions
+6* Clean & simillar code between the files
+7. Division comment
+
+8* Make all the Gambling Arcades a simmilar way to quit
+9. When you leave the arcade, it should only have the Stats (so you say goodbye on the main file)
 
 < ------------------------------------------------------------- >
 
@@ -80,9 +105,7 @@ The difference between the Week and Weekend are:
 
 < ------------------------------------------------------------- >
 
-- Credits
 - goals.txt
 - Boxes (Part 1)
 - Version (Part 2)
-- Backup
 - The idea started on: January 9th, 2025 (Our Story idea)
