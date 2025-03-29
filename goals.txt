@@ -6,7 +6,8 @@ Goals:
     (x) Have a Google Form to join the leaderboards.
 
 (x) Can share to other people by using the url "gamblecore-net"
-    (x) GitHub 
+    (x) GitHub
+    (x) Render
     (x) TinyURL
 
 () Get the front-end done
@@ -30,14 +31,14 @@ Goals:
     () Complete Leaderboards system logic
     () Complete Leaderboards linked to index
     () Have a good swtiching between Weekdays and Weekend (Version)
-    () Do clean URL 
+    (x) Do clean URL 
 
 () Get pro
     () Have a pro playing system (pro visuals, pro gameplay)
     () Have a pro recording system (pro leaderboards all-time and weekly, pro and cool visual)
     () Finalize English
 
-() Make extra changes for the Playing
+() Make extra changes
     () Make a system where there's inactivty for 1 minute, it would skip that round and go to Stats to save.
 
 (x) Milestones with HTML & CSS
@@ -53,7 +54,7 @@ Goals:
     (x) Learn to control heading and paragraph size and alligment
     (x) Learn how to make a favicon
 
-< ------------------------------------------------------------- >
+< --------------------------------------------------------------------------------- >
 
 Slot Machines:
 - Classic Slot Machine (3 to win) 
@@ -71,7 +72,7 @@ Poker Variants:
 - Seven-Card Stud
 - Five-Card Draw (Cantredraw)
 
-< ------------------------------------------------------- >
+< --------------------------------------------------------------------------------- >
 
 Every single one should have the following:
 
@@ -87,7 +88,7 @@ Every single one should have the following:
 8* Make all the Gambling Arcades a simmilar way to quit
 9. When you leave the arcade, it should only have the Stats (so you say goodbye on the main file)
 
-< ------------------------------------------------------------- >
+< --------------------------------------------------------------------------------- >
 
 Right now, we have more Website Navigation places than the four (Home, About, 
 The Manual, and Contact Us) we have right now. These are:
@@ -96,16 +97,15 @@ The Manual, and Contact Us) we have right now. These are:
 - Complete Leaderboards
 - Acount
 
-< ------------------------------------------------------------- >
+< --------------------------------------------------------------------------------- >
 
 The difference between the Week and Weekend are:
 
 - index file
 - Complete Leaderboards
 
-< ------------------------------------------------------------- >
+< --------------------------------------------------------------------------------- >
 
-- goals.txt
 - Boxes (Part 1)
 - Version (Part 2)
 - The idea started on: January 9th, 2025 (Our Story idea)
