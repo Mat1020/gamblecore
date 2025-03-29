@@ -72,4 +72,3 @@ The difference between the Week and Weekend are:
 
 - Server error
 - Render
-- "render.yaml" and "requirements.txt"
