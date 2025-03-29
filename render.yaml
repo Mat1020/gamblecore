@@ -3,7 +3,7 @@ services:
     name: gamblecore
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "cd gamblecore && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    startCommand: python ./manage.py migrate && python ./manage.py runserver 0.0.0.0:8000
     rootDir: .
     envVars:
       - key: DJANGO_SETTINGS_MODULE
