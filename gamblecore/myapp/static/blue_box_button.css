@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    padding: 0; 
+    margin: 0;
+  }
+  
+.blue-box-button {
+    display: inline-block;
+    background-color: #0b5394; /* Bright Red */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+  
+.blue-box-button:hover {
+    background-color: #093f6e; /* Darker Red */
+}
