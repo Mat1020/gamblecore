@@ -2,8 +2,8 @@ services:
   - type: web
     name: gamblecore
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python manage.py migrate && python manage.py runserver 0.0.0.0:8000
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "cd gamblecore && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     envVars:
-      - key: DJANGO_SECRET_KEY
-        generateValue: true
+      - key: DJANGO_SETTINGS_MODULE
+        value: "gamblecore.settings"
