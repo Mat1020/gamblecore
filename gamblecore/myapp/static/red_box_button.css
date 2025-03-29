@@ -1,27 +1,25 @@
-/* Container for centering */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-/* Red Box Button */
-.red-box-button {
+    height: 15vh;
+    padding: 0; 
+    margin: 0;
+  }
+  
+  .red-box-button {
     display: inline-block;
-    background-color: #ff0000; /* Red color */
+    background-color: #ff0000; /* Bright Red */
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    padding: 15px 30px;
-    text-align: center;
+    padding: 20px 40px;
+    border-radius: 12px;
     text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-/* Hover effect */
-.red-box-button:hover {
-    background-color: #cc0000; /* Darker red when hovering */
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  .red-box-button:hover {
+    background-color: #cc0000; /* Darker Red */
+  }
+  
