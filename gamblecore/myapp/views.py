@@ -29,4 +29,4 @@ def version(request):
     else:
         template_name = "Version/index2.html"  # Weekend
 
-    return render(request, "Version/index2.html")
+    return render(request, template_name)
