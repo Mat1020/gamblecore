@@ -22,7 +22,9 @@ Goals:
     () Work on Privacy Policy
     () Work on Terms of Service
     () Finalize Complete Leaderboards
-    () Make and learn some kind of logic for version check
+    (x) Make and learn some kind of logic for version check
+    (x) Change playing button and leaderboards button 
+    () Make the Manual more consistant
 
 () Get the back-end done
     () Playing system logic
@@ -30,7 +32,7 @@ Goals:
     () Recording system
     () Complete Leaderboards system logic
     () Complete Leaderboards linked to index
-    () Have a good swtiching between Weekdays and Weekend (Version)
+    (x) Have a good swtiching between Weekdays and Weekend (Version)
     (x) Do clean URL 
 
 () Get pro
@@ -106,6 +108,5 @@ The difference between the Week and Weekend are:
 
 < --------------------------------------------------------------------------------- >
 
-- Boxes (Part 1)
 - Version (Part 2)
 - The idea started on: January 9th, 2025 (Our Story idea)
