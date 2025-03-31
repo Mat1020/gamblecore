@@ -32,7 +32,9 @@ Goals:
     () Recording system
     () Complete Leaderboards system logic
     () Complete Leaderboards linked to index
-    (x) Have a good swtiching between Weekdays and Weekend (Version)
+    () Have a good swtiching between Weekdays and Weekend (Version)
+        (x) Index files
+        () Leaderboards
     (x) Do clean URL 
 
 () Get pro
@@ -101,12 +103,23 @@ The Manual, and Contact Us) we have right now. These are:
 
 < --------------------------------------------------------------------------------- >
 
-The difference between the Week and Weekend are:
+The difference between the Weekdays and Weekend are:
 
 - index file
 - Complete Leaderboards
+- Recording System Leaderboards
 
 < --------------------------------------------------------------------------------- >
 
-- Version (Part 2)
+Apps:
+
+- myapp: Main App
+- ???: Playing App
+- ???: Leaderboards App
+- ???: Acount System App
+
+< --------------------------------------------------------------------------------- >
+
 - The idea started on: January 9th, 2025 (Our Story idea)
+- About (About & Our Story)
+- Manual
