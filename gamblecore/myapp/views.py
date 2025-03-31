@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import datetime
 
 # Create your views here.
 def index(request):
@@ -18,3 +19,14 @@ def privacy_policy(request):
 
 def terms_of_service(request):
     return render(request, 'Policy/terms_of_service.html')
+
+# Version changing
+def version(request):
+    today = datetime.datetime.today().weekday()  # 0 = Monday, 6 = Sunday
+    
+    if today < 5:
+        template_name = "Version/index1.html"  # Weekday
+    else:
+        template_name = "Version/index2.html"  # Weekend
+
+    return render(request, "Version/index2.html")
