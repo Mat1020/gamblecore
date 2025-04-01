@@ -504,15 +504,15 @@
         <h1 class="press-start"><font color="#F1C232">⭐ SPECIAL THANKS ⭐</font></h1>
         <h1 class="press-start"><font color="#ff0000">Alvincris Apaah</font></h1>
         <h1 class="press-start"><font color="#ff0000">Oscar Eduardo Taján</font></h1>
-        <h1 class="press-start"><font color="#ff0000">Copito (our pet)</font></h1>
+        <h1 class="press-start"><font color="#ff0000">Copito (<a href="{% url 'our_pet' %}">our pet</a>)</font></h1>
 
         
         <!--Bottom Links-->
         <br> <br>
         <!--GitHub--> <a href="https://github.com/Mat1020/gamblecore/" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#b316f7"><u>🐈‍⬛github</u></font></a>
         <!--Email--> <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=contact.gamblecore.net@gmail.com" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#ff0000"><u>✉️email</u></font></a>
-        <!--Privacy Policy--> <a href="policy/privacy_policy" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#38761d"><u>🔒privacy</u></font></a>
-        <!--Terms of Service--> <a href="policy/terms_of_service" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#000bd7"><u>📜terms</u></font></a>
+        <!--Privacy Policy--> <a href="{% url 'privacy_policy' %}" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#38761d"><u>🔒privacy</u></font></a>
+        <!--Terms of Service--> <a href="{% url 'terms_of_service' %}" target="_blank" rel="noopener noreferrer" class="silkscreen"><font color="#000bd7"><u>📜terms</u></font></a>
     <br> <br>
     </section>
 </body>

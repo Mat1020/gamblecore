@@ -20,10 +20,13 @@ def privacy_policy(request):
 def terms_of_service(request):
     return render(request, 'Policy/terms_of_service.html')
 
+def our_pet(request):
+    return render(request, 'our_pet.html')
+
 # Version changing
 def version(request):
     today = datetime.datetime.today() # 0 = Monday, 6 = Sunday
-    weekday = today.weekday() 
+    weekday = today.weekday()
     
     if weekday < 5:
         return render(request, "Version/index1.html")
