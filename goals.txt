@@ -1,14 +1,15 @@
 Goals:
-(x) Get Python code for playing done (Google Doc)
+() Get the Python code for playing done
     (x) Have all gambling arcades working and clean main file.
-    (x) Have a way to acces them very easily.
-    (x) Have a Gamblecore Manual.
-    (x) Have a Google Form to join the leaderboards.
+    (x) Follows the "10 Rules of clean Gamblecore Files"
+    () Make a system where there's inactivty for 1 minute, it would skip that round and go to Stats to save
+    ()
 
-(x) Can share to other people by using the url "gamblecore-net"
+() Can share to other people by using the url "gamblecore-net" 
     (x) GitHub
     (x) Render
     (x) TinyURL
+    () It is "gamblecore-net" 100%
 
 () Get the front-end done
     (x) Finalize the "Gamblecore Feaututes Explained" section
@@ -28,22 +29,21 @@ Goals:
 
 () Get the back-end done
     () Playing system logic
-    () Acount system + record history (like highest balance in one run, highest wins in one run, streaks, etc.)
+    () Acount system
+        () Sign in/Log in
+        () Acount history (like highest balance in one run, highest wins in one run, streaks, etc.)
     () Recording system
     () Complete Leaderboards system logic
     () Complete Leaderboards linked to index
     () Have a good swtiching between Weekdays and Weekend (Version)
         (x) Index files
-        () Leaderboards
+        () Leaderboards (Recording + Complete)
     (x) Do clean URL 
 
 () Get pro
     () Have a pro playing system (pro visuals, pro gameplay)
     () Have a pro recording system (pro leaderboards all-time and weekly, pro and cool visual)
     () Finalize English
-
-() Make extra changes
-    () Make a system where there's inactivty for 1 minute, it would skip that round and go to Stats to save.
 
 (x) Milestones with HTML & CSS
     (x) Learn how to use Live Server for website develoment
@@ -78,7 +78,7 @@ Poker Variants:
 
 < --------------------------------------------------------------------------------- >
 
-Every single one should have the following:
+10 Rules of clean Gamblecore Files. Every single one should have the following:
 
 1. Quick introduction (Welcome to...)
 2. Easy gameplay (add spaces between plays, clear to read, etc.)
@@ -94,8 +94,8 @@ Every single one should have the following:
 
 < --------------------------------------------------------------------------------- >
 
-Right now, we have more Website Navigation places than the four (Home, About, 
-The Manual, and Contact Us) we have right now. These are:
+Right now, we have more Website Navigation places that haven't been included yet.
+These are:
 
 - Playing system
 - Complete Leaderboards
@@ -123,3 +123,4 @@ Apps:
 - The idea started on: January 9th, 2025 (Our Story idea)
 - About (About & Our Story)
 - Manual
+- Get demo
