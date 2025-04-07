@@ -1,7 +1,7 @@
 Goals:
 () Get the Python code for playing done
     (x) Have all gambling arcades working and clean main file.
-    (x) Follows the "10 Rules of clean Gamblecore Files"
+    () Follows the "9 Rules of clean Gamblecore Files"
     () Make a system where there's inactivty for 1 minute, it would skip that round and go to Stats to save
     () Slot Machines
         () For Classic and Tryhard, make it un-spamable
@@ -11,46 +11,61 @@ Goals:
     () Poker Variants
         () Rename "Texas Hold Em'" to "Texas Hold'em"
         () Include the "River" and more rounds for Cantredraw, Omaha Hi, and Texas Hold'em
+    () Certificated to it adresses the main point of the casino games
 
 () Can share to other people by using the url "gamblecore-net" 
     (x) GitHub
     (x) Render
     (x) TinyURL
-    () It is "gamblecore-net" 100%
+    () It is "tinyurl.com/gamblecore-net" 100%, but "gamblecore.onrender.com" is fine too
 
 () Get the front-end done
-    (x) Finalize the "Gamblecore Feaututes Explained" section
-    () Finalize About
-    () Finalize Our Story
     (x) Make a some ways to reach people from Gamblecore, Contact Us
     (x) Make an overall Gamblecore gmail only for reciving emails
     (x) Finalize Contact Us
-    (x) Finalize "Common Problems" section
-    () Finalize everything that has the blue brackets []
+    (x) Make and learn some kind of logic for version check with HTML
+    (x) Make playing button and leaderboards button
+    () Finalize About
+    () Finalize Our Story
     () Work on Privacy Policy
     () Work on Terms of Service
     () Finalize Complete Leaderboards
-    (x) Make and learn some kind of logic for version check
-    (x) Change playing button and leaderboards button 
     () Make the Manual more consistant
+        () Make it look the same on all devices
+        () Have it more informative
+    () Refactor each section of the Manual
+        () Finalize "How to play in Gamblecore" section
+            () Consider including how to play in the week and weekend
+        () Finalize "Gamblecore Informational Notes" section
+            () Add winning chances/odds
+            () Consider replacing saying "winning chances" with "odds"
+        () Finalize "Common problems" section
+            () Consider another way of 
+        () Finalize "Where should YOU start?" section
+        () Finalize "Credits" section
+    () Finalize everything that has the blue brackets []
 
 () Get the back-end done
     () Playing system logic
+        () Displays tips and fun-facts before playing
+        () Playing is like Python Trinket
     () Acount system
         () Sign in/Log in
-        () Acount history (like highest balance in one run, highest wins in one run, streaks, etc.)
-    () Recording system
-    () Complete Leaderboards system logic
-    () Complete Leaderboards linked to index
+        () History (like highest balance in one run, highest wins in one run, streaks, etc.)
+    () Leaderboards
+        () Recording system
+        () Complete Leaderboards system logic
+        () Complete Leaderboards linked to index
     () Have a good swtiching between Weekdays and Weekend (Version)
         (x) Index files
         () Leaderboards (Recording + Complete)
-    (x) Do clean URL 
 
 () Get pro
     () Have a pro playing system (pro visuals, pro gameplay)
     () Have a pro recording system (pro leaderboards all-time and weekly, pro and cool visual)
     () Finalize English
+        () Check spelling, check it's formal, and check if there are run-ons or fragments
+        () Review at reading parts with Justin
 
 (x) Milestones with HTML & CSS
     (x) Learn how to use Live Server for website develoment
@@ -85,7 +100,7 @@ Poker Variants:
 
 < --------------------------------------------------------------------------------- >
 
-10 Rules of clean Gamblecore Files. Every single one should have the following:
+9 Rules of clean Gamblecore Files. Every single one should have the following:
 
 1. Quick introduction (Welcome to...)
 2. Easy gameplay (add spaces between plays, clear to read, etc.)
@@ -98,6 +113,15 @@ Poker Variants:
 
 8* Make all the Gambling Arcades a simmilar way to quit
 9. When you leave the arcade, it should only have the Stats (so you say goodbye on the main file)
+
+< --------------------------------------------------------------------------------- >
+
+Apps:
+
+- main: Main App
+- ???: Playing App
+- ???: Acount System App
+- ???: Leaderboards App
 
 < --------------------------------------------------------------------------------- >
 
@@ -118,16 +142,7 @@ The difference between the Weekdays and Weekend are:
 
 < --------------------------------------------------------------------------------- >
 
-Apps:
-
-- main: Main App
-- ???: Playing App
-- ???: Acount System App
-- ???: Leaderboards App
-
-< --------------------------------------------------------------------------------- >
-
-- The idea started on: January 9th, 2025 (Our Story idea)
+- The idea started on: January 9th, 2025 (Our Story implemention)
 - About (About & Our Story)
 - Manual
 - Get demo
