@@ -3,7 +3,14 @@ Goals:
     (x) Have all gambling arcades working and clean main file.
     (x) Follows the "10 Rules of clean Gamblecore Files"
     () Make a system where there's inactivty for 1 minute, it would skip that round and go to Stats to save
-    ()
+    () Slot Machines
+        () For Classic and Tryhard, make it un-spamable
+        () For Classic and Tryhard, include now betting too
+    () Roulette Wheels
+        () See what else you can add to make it more realistic
+    () Poker Variants
+        () Rename "main" to "Texas Hold'em"
+        () Include the "River" and more rounds for Cantredraw, Omaha Hi, and Texas Hold'em
 
 () Can share to other people by using the url "gamblecore-net" 
     (x) GitHub
@@ -71,7 +78,7 @@ Roulette Wheels:
 - European Roulette Wheel
 
 Poker Variants:
-- Texas Hold Em'
+- Texas Hold'Em
 - Omaha Hi
 - Seven-Card Stud
 - Five-Card Draw (Cantredraw)
@@ -115,8 +122,8 @@ Apps:
 
 - main: Main App
 - ???: Playing App
-- ???: Leaderboards App
 - ???: Acount System App
+- ???: Leaderboards App
 
 < --------------------------------------------------------------------------------- >
 
