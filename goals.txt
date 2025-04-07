@@ -9,7 +9,7 @@ Goals:
     () Roulette Wheels
         () See what else you can add to make it more realistic
     () Poker Variants
-        () Rename "main" to "Texas Hold'em"
+        () Rename "Texas Hold Em'" to "Texas Hold'em"
         () Include the "River" and more rounds for Cantredraw, Omaha Hi, and Texas Hold'em
 
 () Can share to other people by using the url "gamblecore-net" 
