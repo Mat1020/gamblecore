@@ -57,6 +57,7 @@ Goals:
         () Complete Leaderboards system logic
         () Complete Leaderboards linked to index
     () Have a good swtiching between Weekdays and Weekend (Version)
+        (x) Version app
         (x) Index files
         () Leaderboards (Recording + Complete)
 
@@ -119,6 +120,7 @@ Poker Variants:
 Apps:
 
 - main: Main App
+- version: Version App
 - ???: Playing App
 - ???: Acount System App
 - ???: Leaderboards App
