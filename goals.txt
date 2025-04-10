@@ -30,9 +30,6 @@ Goals:
     () Work on Privacy Policy
     () Work on Terms of Service
     () Finalize Complete Leaderboards
-    () Make the Manual more consistant
-        () Make it look the same on all devices
-        () Have it more informative
     () Refactor each section of the Manual
         () Finalize "How to play in Gamblecore" section
             () Consider including how to play in the week and weekend
@@ -43,6 +40,10 @@ Goals:
             () Consider another way of 
         () Finalize "Where should YOU start?" section
         () Finalize "Credits" section
+        () Add numbers to the table of contents
+    () Make the Manual more consistant
+        () Make it look the same on all devices
+        () Have it more informative
     () Finalize everything that has the blue brackets []
 
 () Get the back-end done
