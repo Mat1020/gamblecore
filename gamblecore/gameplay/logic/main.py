@@ -1,6 +1,6 @@
-from SlotMachines import classic_slot_machine, bucks_slot_machine, tryhard_slot_machine
-from RouletteWheels import french_roulette_wheel, american_roulette_wheel, european_roulette_wheel
-from PokerVariants import texas_holdem, omaha_hi, seven_card_stud, cantredraw
+from gameplay.logic.SlotMachines import classic_slot_machine, bucks_slot_machine, tryhard_slot_machine
+from gameplay.logic.RouletteWheels import french_roulette_wheel, american_roulette_wheel, european_roulette_wheel
+from gameplay.logic.PokerVariants import texas_holdem, omaha_hi, seven_card_stud, cantredraw
 import time
 
 TOTAL_GAMBLING_ARCADES = 3
