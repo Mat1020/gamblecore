@@ -196,5 +196,7 @@ def main():
     print(f"You tied: {user_ties} times.")
     print(f"Total rounds played: {total_rounds}.")
 
+    print("\nThank you for playing, goodbye!")
+    quit()
 
-# main()
+main()

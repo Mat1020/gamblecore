@@ -153,6 +153,8 @@ def main():
     print(f"La Partage usages: {user_partages} times.")
     print(f"The total rounds were: {total_rounds}.")
     time.sleep(2)
+    
+    print("\nThank you for playing, goodbye!")
+    quit()
 
-
-# main()
+main()

@@ -186,5 +186,7 @@ def main():
     print(f"The total rounds played: {total_rounds}.")
     time.sleep(2)
 
+    print("\nThank you for playing, goodbye!")
+    quit()
 
-# main()
+main()
