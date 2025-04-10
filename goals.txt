@@ -121,7 +121,7 @@ Apps:
 
 - main: Main App
 - version: Version App
-- ???: Playing App
+- gameplay: Playing App
 - ???: Acount System App
 - ???: Leaderboards App
 
