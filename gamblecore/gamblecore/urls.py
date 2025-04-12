@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main.urls')),  # This connects your app's URLs
+    path('', include('main.urls')),
+    path("gameplay/", include("gameplay.urls")),
 ]
