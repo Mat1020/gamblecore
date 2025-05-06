@@ -1,2 +1,81 @@
-<h1>Classic Slot Machine!</h1>
-<p>This is a test template. It works!</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gamblecore</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm/css/xterm.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: #1e1e1e; /* Page background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Fira Code', monospace;
+      }
+
+      #terminal {
+        width: 800px;
+        height: 450px;
+        border: 2px solid #444;
+        box-shadow: 0 0 20px #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="terminal"></div>
+
+    <!-- Xterm and Addon -->
+    <script src="https://cdn.jsdelivr.net/npm/xterm/lib/xterm.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit/lib/xterm-addon-fit.min.js"></script>
+    <script>
+      const term = new Terminal({
+        cursorBlink: true,
+        fontFamily: 'Fira Code, monospace',
+        fontSize: 16,
+        theme: {
+          background: '#000000',
+          foreground: '#00FF00',
+        },
+      });
+
+      const fitAddon = new FitAddon.FitAddon();
+      term.loadAddon(fitAddon);
+      term.open(document.getElementById("terminal"));
+      fitAddon.fit();
+
+      // Create WebSocket connection
+      const socket = new WebSocket('ws://' + window.location.host + '/ws/play/');
+
+      // Show initial messages
+      term.writeln("Welcome to Classic Slot Machine!");
+      term.writeln("Initializing...\r\n");
+
+      // Handle incoming messages
+      socket.onmessage = function (e) {
+        term.write(e.data.replace(/\n/g, "\r\n"));
+      };
+
+      // Handle terminal input
+      let inputBuffer = "";
+
+      term.onData(function (data) {
+        if (data === '\r') { // Enter key
+          socket.send(inputBuffer);
+          term.write("\r\n");
+          inputBuffer = "";
+        } else if (data === '\u007F') { // Backspace
+          if (inputBuffer.length > 0) {
+            inputBuffer = inputBuffer.slice(0, -1);
+            term.write('\b \b');
+          }
+        } else {
+          inputBuffer += data;
+          term.write(data);
+        }
+      });
+    </script>
+  </body>
+</html>

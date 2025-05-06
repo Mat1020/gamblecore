@@ -49,7 +49,11 @@ Goals:
 () Get the back-end done
     () Playing system logic
         () Displays tips and fun-facts before playing
-        () Playing is like Python Trinket
+        () Simulates a terminal envoriment
+            () Games working
+            () Custoziable console 
+            () Works like the rest html files
+            () Looks like an arcade
     () Acount system
         () Sign in/Log in
         () History (like highest balance in one run, highest wins in one run, streaks, etc.)
