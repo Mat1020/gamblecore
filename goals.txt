@@ -161,3 +161,8 @@ The difference between the Weekdays and Weekend are:
 - About (About & Our Story)
 - Manual
 - Get demo
+
+- Simple playing works on local host
+- Simple playing works online
+- Include the look of the terminal
+- Include a "games" folder for the arcade games
