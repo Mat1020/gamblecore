@@ -45,8 +45,11 @@ INSTALLED_APPS = [
     "channels",
     'main',
     'version',
-    'gameplay'
+    'gameplay',
+    'game'
 ]
+
+INSTALLED_APPS += ['channels']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

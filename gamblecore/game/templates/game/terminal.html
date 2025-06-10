@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Terminal</title>
+</head>
+<body>
+    <h2>Interactive Game Terminal</h2>
+    <pre id="output"></pre>
+    <input type="text" id="input" autocomplete="off" />
+    
+    <script>
+        const output = document.getElementById("output");
+        const input = document.getElementById("input");
+        const socket = new WebSocket("ws://" + window.location.host + "/ws/terminal/");
+
+        socket.onmessage = function(e) {
+            output.textContent += e.data;
+        };
+
+        input.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                socket.send(input.value);
+                input.value = "";
+            }
+        });
+    </script>
+</body>
+</html>
