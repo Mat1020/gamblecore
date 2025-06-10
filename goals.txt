@@ -9,7 +9,7 @@ Goals:
     () Roulette Wheels
         () See what else you can add to make it more realistic
     () Poker Variants
-        () Rename "Texas Hold Em'" to "Texas Hold'em"
+        (x) Rename "Texas Hold Em'" to "Texas Hold'em"
         () Include the "River" and more rounds for Cantredraw, Omaha Hi, and Texas Hold'em
     () Certificated to it adresses the main point of the casino games
 
@@ -26,7 +26,10 @@ Goals:
     (x) Make and learn some kind of logic for version check with HTML
     (x) Make playing button and leaderboards button
     () Finalize About
-    () Finalize Our Story
+    () Refactor Our Story to Meet the Gamblecore Team
+        () Include team members
+        () Take insperation from rivals of aether wesbite
+        () Have a little story message on the top before intrudcing
     () Work on Privacy Policy
     () Work on Terms of Service
     () Finalize Complete Leaderboards
@@ -51,9 +54,13 @@ Goals:
         () Displays tips and fun-facts before playing
         () Simulates a terminal envoriment
             () Games working
-            () Custoziable console 
+            () Custoziable console (Have options liek Dracula, GitHub, etc & have three colors for each)
             () Works like the rest html files
-            () Looks like an arcade
+            (x) Looks like an arcade
+        () Game selector
+            () Can play every single game
+            () Can go to game selector when you click "dice now"
+            () Game selector looks fancy and works clean
     () Acount system
         () Sign in/Log in
         () History (like highest balance in one run, highest wins in one run, streaks, etc.)
@@ -64,6 +71,7 @@ Goals:
     () Have a good swtiching between Weekdays and Weekend (Version)
         (x) Version app
         (x) Index files
+        () Playing ()
         () Leaderboards (Recording + Complete)
 
 () Get pro
