@@ -166,3 +166,7 @@ The difference between the Weekdays and Weekend are:
 - Simple playing works online
 - Include the look of the terminal
 - Include a "games" folder for the arcade games
+- Playing games works on local host
+- Playing games works online
+- Make game selector
+- The "dice now" goes to game selector, and then to the game
