@@ -8,4 +8,4 @@
 
 ## Contributors
 
-## Who it would be
+## How it would work when it's done
