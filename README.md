@@ -1,5 +1,5 @@
 # About
-
+Gamblecore is about...
 # Our Story
 
 # Gamblecore
